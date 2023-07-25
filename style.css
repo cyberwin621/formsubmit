@@ -1,0 +1,322 @@
+/* Reset some default margin and padding */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------------------------------Header---------------------------------------*/
+
+/* Center the banner content horizontally */
+.banner {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 10px;
+}
+
+/* Style the logo */
+.logo img {
+    height: 150px; /* Adjust the height as needed */
+	width: auto;
+}
+
+/* Style the banner image */
+.banner-image img {
+    width: 100%; /* Stretch the image to the width of the screen */
+    height: auto;
+}
+
+/* Style the links on the right side */
+.links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/*---------------------------------------------Homepage---------------------------------------*/
+.homeContent{
+		min-height: 100vh;
+		width: 100%;
+		background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/FrankGaming.png);
+		background-position: center;
+		background-size: cover;
+		position: relative;
+}
+
+audio::-webkit-media-controls {
+  background-color: #ff0000;
+  color: #ff0000;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.text-box{
+		width: 90%;
+		color: #ff0000;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+}
+.text-box h1{
+	font-size: 62px;
+}
+.text-box p{
+		margin: 10px 0 40px;
+		font-size: 32px;
+		color: #ff0000;
+}
+.yt-btn{
+		display: inline-block;
+		text-decoration: none;
+		color: #ff0000;
+		border: 1px solid #ff0000;
+		padding:12px 34px;
+		font-size: 13px;
+		background: transparent;
+		position: relative;
+		cursor: pointer;
+}
+.yt-btn:hover{
+		border: 1px solid #ff0000;
+		background: #fff;
+		transition: 1s;
+}
+
+.discord-btn{
+		display: inline-block;
+		text-decoration: none;
+		color: #738ADB;
+		border: 1px solid #738ADB;
+		padding:12px 34px;
+		font-size: 13px;
+		background: transparent;
+		position: relative;
+		cursor: pointer;
+}
+.discord-btn:hover{
+		border: 1px solid #738ADB;
+		background: #fff;
+		transition: 1s;
+}
+
+.small-container{
+		max-width: 1080px;
+		margin: 30px auto;
+		padding-left: 25px;
+		padding-right: 25px;
+}
+
+.row{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+}
+
+.merchTitle{
+		text-align: center;
+		margin: 0 auto 30px;
+		position: relative;
+		line-height: 60px;
+		color: ;
+}
+
+.merchTitle::after{
+	content: '';
+	background: #ff0000;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.col-4{
+		flex-basis: 25%;
+		padding: 10px;
+		min-width: 200px;
+		margin-bottom: 50px;
+		transition: transform 0.5s;
+}
+
+.col-4 img{
+		width: 100%;
+}
+
+.col-4 p{
+		font-size: 14px;
+}
+
+.rating .fa{
+		color: #ff523b;
+}
+
+.col-4:hover{
+	transform: translateY(-5px);
+}
+
+/*---------------------------------------------About Pages------------------------------------------------*/
+
+.aboutContent{
+	background-color: #abdbe3;
+	border: 2px solid black;
+	padding: 50px;
+	max-width: 30%;
+	min-width: 200px;
+	margin: 20px auto;
+	line-height: 3;
+}
+
+.aboutContent h1{
+		text-align: Center;
+		padding: 15px;
+		text-decoration: 
+}
+
+.aboutContent p{
+		text-align: Center;
+		
+}
+
+.next_btn{
+		text-align: center;
+		padding: 15px;
+}
+
+.about_nextbtn{
+		text-decoration: underline;
+		color: #0000ff;
+		font-size: 72px;
+}
+
+/*-----------------------------------------------Contact Page---------------------------------------------*/
+
+.Connect_container{
+		background: #55ffe5;
+		font-size: 14px;
+		width: 80%;
+		margin: 50px auto;
+		border: 2px solid black;
+		padding: 50px;
+}
+
+.contact-box{
+	background: #fff;
+	display: flex;
+}
+
+.contact-left{
+		flex-basis: 60%;
+		padding: 40px 60px;
+}
+
+.contact-right{
+		flex-basis: 60%;
+		padding: 40px;
+		background: #1c00b5;
+		color: #fff;
+}
+
+.Connect_container h1{
+		margin-bottom: 10px;
+		
+}
+
+.Connect_container p{
+	margin-bottom: 40px;
+}
+
+.input-row{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+}
+
+.input-row .input-group{
+		flex-basis: 45%;
+}
+
+.Connect_container input{
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #ccc;
+		outline: none;
+		padding-bottom: 5px;
+}
+.Connect_container textarea{
+		width: 100%;
+		border: 1px solid #ccc;
+		outline: none;
+		padding: 10px;
+		box-sizing: border-box;
+}
+
+.Connect_container label{
+		margin-bottom: 6px;
+		display: block;
+		color: #1c00b5;
+}
+
+.Connect_container button{
+	background: #1c00b5;
+	width: 100px;
+	border: none;
+	outline: none;
+	color: #fff;
+	height: 35px;
+	border-radius: 30px;
+	margin-top: 20px;
+	box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+.contact-left h3{
+		color: #1c00b5;
+		font-weight: 600;
+		margin-bottom: 30px;
+}
+
+.contact-right h3{
+		font-weight: 600;
+		margin-bottom: 30px;
+}
+
+.Connect_container tr td:first-child{
+		padding-right: 20px;
+}
+.Connect_container tr td{
+		padding-top: 20px;
+}
+
+/*-----------------------------------------------Footer--------------------------------------------------*/
+.footer{
+		width: 100%;
+		text-align: center;
+		padding: 30px 0;
+		background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/Frank.png);
+}
+.footer h4{
+	color: #fff;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600px;
+}
+.footer p{
+		color: #fff;
+}
+.icons .fa{
+		color: #f44336;
+		margin: 0 13px;
+		cursor: pointer;
+		padding: 18px 0;
+}
+.fa-heart-o{
+	color: #f44336;
+}
+
+
